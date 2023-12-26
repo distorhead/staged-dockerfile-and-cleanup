@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export WERF_STAGED_DOCKERFILE_VERSION=v2
+export WERF_BUILDAH_MODE=auto
