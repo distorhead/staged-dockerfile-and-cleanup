@@ -1,0 +1,96 @@
+Version: dev
+Using werf config render file: /tmp/werf-config-render-3574068826
+
+[1m┌[0m [1mConcurrent build plan (no more than 5 images at the same time)[0m
+[1m│[0m [1mSet #0:[0m
+[1m│[0m [1m- ⛵ image a/stage0[0m
+[1m│[0m 
+[1m│[0m [1mSet #1:[0m
+[1m│[0m [1m- ⛵ image a[0m
+[1m└[0m [1mConcurrent build plan (no more than 5 images at the same time)[0m
+
+[33;1m┌[0m [33;1m⛵ image a/stage0[0m
+[33;1m│[0m [1mUse previously built image for a/stage0/FROM1[0m
+[33;1m│[0m [34;1m     name: ghcr.io/distorhead/staged-dockerfile-and-cleanup-1:e04aabae944014428292277d778552515a551265d183d2ae927e0925-1703667178222[0m
+[33;1m│[0m [34;1m       id: f0d3655c208a[0m
+[33;1m│[0m [34;1m  created: 2023-12-27 08:52:56 +0000 UTC[0m
+[33;1m│[0m [34;1m     size: 3.3 MiB[0m
+[33;1m│[0m 
+[33;1m│[0m [1mUse previously built image for a/stage0/RUN2[0m
+[33;1m│[0m [34;1m     name: ghcr.io/distorhead/staged-dockerfile-and-cleanup-1:6605d650788ad39d7c9901dae8a54ec5bd0e1fe403425dadf001154b-1703667344592[0m
+[33;1m│[0m [34;1m       id: 86a19609575e[0m
+[33;1m│[0m [34;1m  created: 2023-12-27 08:55:43 +0000 UTC[0m
+[33;1m│[0m [34;1m     size: 3.3 MiB (+287 B)[0m
+[33;1m│[0m 
+[33;1m│[0m [1mUse previously built image for a/stage0/RUN3[0m
+[33;1m│[0m [34;1m     name: ghcr.io/distorhead/staged-dockerfile-and-cleanup-1:34da8ee628eaf838110af6a6ae6bbca4eafcc008b197c2f77f0d480a-1703667354239[0m
+[33;1m│[0m [34;1m       id: 8c7673c0a5b2[0m
+[33;1m│[0m [34;1m  created: 2023-12-27 08:55:53 +0000 UTC[0m
+[33;1m│[0m [34;1m     size: 3.3 MiB (+328 B)[0m
+[33;1m│[0m 
+[33;1m│[0m [1mUse previously built image for a/stage0/RUN4[0m
+[33;1m│[0m [34;1m     name: ghcr.io/distorhead/staged-dockerfile-and-cleanup-1:f4995689995472843a84ed6a0b89d941df03e5d3bc435a7de6aa9130-1703667364068[0m
+[33;1m│[0m [34;1m       id: 3edad82bc172[0m
+[33;1m│[0m [34;1m  created: 2023-12-27 08:56:03 +0000 UTC[0m
+[33;1m│[0m [34;1m     size: 3.3 MiB (+270 B)[0m
+[33;1m│[0m 
+[33;1m│[0m [1m┌[0m [1mBuilding stage a/stage0/ADD5[0m
+[33;1m│[0m [1m│[0m ┌ Store stage into ghcr.io/distorhead/staged-dockerfile-and-cleanup-1
+[33;1m│[0m [1m│[0m └ Store stage into ghcr.io/distorhead/staged-dockerfile-and-cleanup-1 (5.19 seconds)
+[33;1m│[0m [1m├[0m [1mInfo[0m
+[33;1m│[0m [1m│[0m [34;1m     name: ghcr.io/distorhead/staged-dockerfile-and-cleanup-1:d81288c548782d61e98d1470b3589de87d64651cced8da914059b19f-1703685810389[0m
+[33;1m│[0m [1m│[0m [34;1m       id: 834f2eb4fd51[0m
+[33;1m│[0m [1m│[0m [34;1m  created: 2023-12-27 14:03:29 +0000 UTC[0m
+[33;1m│[0m [1m│[0m [34;1m     size: 3.3 MiB (+584 B)[0m
+[33;1m│[0m [1m└[0m [1mBuilding stage a/stage0/ADD5[0m[1m (7.42 seconds)[0m
+[33;1m│[0m 
+[33;1m│[0m [1m┌[0m [1mBuilding stage a/stage0/RUN6[0m
+[33;1m│[0m [1m│[0m [33;1ma/stage0/RUN[0m  $ ls -R /src
+[33;1m│[0m [1m│[0m [33;1ma/stage0/RUN[0m  /src:
+[33;1m│[0m [1m│[0m [33;1ma/stage0/RUN[0m  Dockerfile
+[33;1m│[0m [1m│[0m [33;1ma/stage0/RUN[0m  setup.sh
+[33;1m│[0m [1m│[0m [33;1ma/stage0/RUN[0m  start.sh
+[33;1m│[0m [1m│[0m [33;1ma/stage0/RUN[0m  werf.yaml
+[33;1m│[0m [1m│[0m ┌ Store stage into ghcr.io/distorhead/staged-dockerfile-and-cleanup-1
+[33;1m│[0m [1m│[0m └ Store stage into ghcr.io/distorhead/staged-dockerfile-and-cleanup-1 (5.63 seconds)
+[33;1m│[0m [1m├[0m [1mInfo[0m
+[33;1m│[0m [1m│[0m [34;1m     name: ghcr.io/distorhead/staged-dockerfile-and-cleanup-1:d54bb59b5ae35264cb0fac901f53ecb78ad042c456fb4321f2d587de-1703685819725[0m
+[33;1m│[0m [1m│[0m [34;1m       id: da648d5b234b[0m
+[33;1m│[0m [1m│[0m [34;1m  created: 2023-12-27 14:03:38 +0000 UTC[0m
+[33;1m│[0m [1m│[0m [34;1m     size: 3.3 MiB (+183 B)[0m
+[33;1m│[0m [1m└[0m [1mBuilding stage a/stage0/RUN6[0m[1m (9.09 seconds)[0m
+[33;1m└[0m [33;1m⛵ image a/stage0[0m[33;1m (18.01 seconds)[0m
+
+[33;1m┌[0m [33;1m⛵ image a[0m
+[33;1m│[0m [1mUse previously built image for a/FROM1[0m
+[33;1m│[0m [34;1m     name: ghcr.io/distorhead/staged-dockerfile-and-cleanup-1:e04aabae944014428292277d778552515a551265d183d2ae927e0925-1703667178222[0m
+[33;1m│[0m [34;1m       id: f0d3655c208a[0m
+[33;1m│[0m [34;1m  created: 2023-12-27 08:52:56 +0000 UTC[0m
+[33;1m│[0m [34;1m     size: 3.3 MiB[0m
+[33;1m│[0m 
+[33;1m│[0m [1mUse previously built image for a/RUN2[0m
+[33;1m│[0m [34;1m     name: ghcr.io/distorhead/staged-dockerfile-and-cleanup-1:353648d6044f1247dc41afec5ed59568598c2a10fddadbffb897a7fb-1703667373470[0m
+[33;1m│[0m [34;1m       id: ae1fff1cc2b8[0m
+[33;1m│[0m [34;1m  created: 2023-12-27 08:56:12 +0000 UTC[0m
+[33;1m│[0m [34;1m     size: 3.3 MiB (+306 B)[0m
+[33;1m│[0m 
+[33;1m│[0m [1m┌[0m [1mBuilding stage a/COPY3[0m
+[33;1m│[0m [1m│[0m ┌ Store stage into ghcr.io/distorhead/staged-dockerfile-and-cleanup-1
+[33;1m│[0m [1m│[0m └ Store stage into ghcr.io/distorhead/staged-dockerfile-and-cleanup-1 (5.03 seconds)
+[33;1m│[0m [1m├[0m [1mInfo[0m
+[33;1m│[0m [1m│[0m [34;1m     name: ghcr.io/distorhead/staged-dockerfile-and-cleanup-1:3a81343d8e57fcba394b1cacab6161ecdae543b629541629a4869d7e-1703685827920[0m
+[33;1m│[0m [1m│[0m [34;1m       id: f3bc7e38e7e7[0m
+[33;1m│[0m [1m│[0m [34;1m  created: 2023-12-27 14:03:47 +0000 UTC[0m
+[33;1m│[0m [1m│[0m [34;1m     size: 3.3 MiB (+216 B)[0m
+[33;1m│[0m [1m└[0m [1mBuilding stage a/COPY3[0m[1m (6.90 seconds)[0m
+[33;1m└[0m [33;1m⛵ image a[0m[33;1m (7.58 seconds)[0m
+
+[1m┌[0m [1mBuild summary[0m
+[1m│[0m [1mSet #0:[0m
+[1m│[0m [1m- ⛵ image a/stage0 (18.01 seconds)[0m
+[1m│[0m 
+[1m│[0m [1mSet #1:[0m
+[1m│[0m [1m- ⛵ image a (7.58 seconds)[0m
+[1m└[0m [1mBuild summary[0m
+
+[1mRunning time 30.52 seconds[0m
