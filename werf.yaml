@@ -1,5 +1,8 @@
 project: x
 configVersion: 1
+cleanup:
+  disableKubernetesBasedPolicy: true
+  disableBuiltWithinLastNHoursPolicy: true
 ---
 image: a
 dockerfile: ./Dockerfile
