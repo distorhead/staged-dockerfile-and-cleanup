@@ -1,9 +1,31 @@
 project: x
 configVersion: 1
 cleanup:
-  disableKubernetesBasedPolicy: true
-  disableBuiltWithinLastNHoursPolicy: true
+  keepPolicies:
+  - references:
+      branch: /.*/
+      limit:
+        last: 10
+        in: 168h
+        operator: And
+    imagesPerReference:
+      last: 2
+      in: 5m
+      operator: And
 ---
-image: a
-dockerfile: ./Dockerfile
-staged: true
+image: b
+from: ubuntu
+shell:
+  beforeInstall:
+    - date
+  install:
+    - date
+
+  beforeSetup:
+    - date
+    - sleep 60
+  beforeSetupCacheVersion: "0"
+
+  setup:
+    - date
+    - sleep 30
