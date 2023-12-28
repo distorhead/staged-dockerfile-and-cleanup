@@ -28,4 +28,3 @@ shell:
 
   setup:
     - date
-    - sleep 30
