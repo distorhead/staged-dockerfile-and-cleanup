@@ -24,7 +24,7 @@ shell:
   beforeSetup:
     - date
     - sleep 60
-  beforeSetupCacheVersion: "0"
+  beforeSetupCacheVersion: "1"
 
   setup:
     - date
